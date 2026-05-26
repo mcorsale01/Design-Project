@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!--Feedback Form-->
+
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-button,
+        a.back-button,
+        a[href="index.html"] {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        a.back-button:hover,
+        a[href="index.html"]:hover {
+            background-color: white;
+            color: black;
+        }
+
+        a.back-button:active,
+        a[href="index.html"]:active {
+            transform: scale(0.97);
+        }
+
+        a.reset-button {
+            display: inline-block;
+            padding: 2px 6px;
+            appearance: button;
+            -webkit-appearance: button;
+            text-decoration: none;
+            color: initial;
+            border: 2px outset;
+            background: ButtonFace;
+            font-family: sans-serif;
+            font-size: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<!--This section gathers the info-->
+
+<body>
+    <h1>Feedback Form</h1>
+    <form action="submit.html" method="get">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        <br><br>
+
+        <legend>Choose a type of game that you would like in the future:</legend>
+        <label><input type="radio" name="question" value="q1"> Flappy Bird</label><br>
+        <label><input type="radio" name="question" value="q2"> Pong</label><br>
+        <label><input type="radio" name="question" value="q3"> Tetris</label><br>
+        <label><input type="radio" name="question" value="q4"> Pac-Man</label><br>
+        <label><input type="radio" name="question" value="q5"> Space Invaders</label><br><br>
+
+        <label for="reason">Reason for choice</label><br>
+        <textarea name="reason" id="reason" cols="50" rows="10" placeholder="Enter your Reason" required></textarea>
+        <legend>What would you rate the games?</legend>
+        <label><input type="radio" name="question" value="q1"> 0</label>
+        <label><input type="radio" name="question" value="q2"> 1</label>
+        <label><input type="radio" name="question" value="q3"> 2</label>
+        <label><input type="radio" name="question" value="q4"> 3</label>
+        <label><input type="radio" name="question" value="q5"> 4</label>
+        <label><input type="radio" name="question" value="q6"> 5</label>
+        <label><input type="radio" name="question" value="q7"> 6</label>
+        <label><input type="radio" name="question" value="q8"> 7</label>
+        <label><input type="radio" name="question" value="q9"> 8</label>
+        <label><input type="radio" name="question" value="q10"> 9</label>
+        <label><input type="radio" name="question" value="q11"> 10</label>
+        </fieldset>
+        <br><br>
+        <label for="pricereason">Recommendations/Criticisms</label><br>
+        <textarea name="pricereason" id="pricereason" cols="50" rows="10"
+            placeholder="Enter your recommendations or criticisms here"></textarea>
+        <fieldset>
+            <a href="forms.html" class="form-button">Reset form</a>
+            <button class="form-button" type="submit">Submit</button>
+    </form>
+    <br><br>
+
+    <p><a href="index.html" class="back-button" style="margin-top:10px; display:inline-block;">Go Back</a></p>
+</body>
+
+</html>
